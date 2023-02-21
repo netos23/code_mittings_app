@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "948726641069",
+    "project_id": "code-meetings",
+    "storage_bucket": "code-meetings.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:948726641069:android:5613bcb3a2de95601af124",
+        "android_client_info": {
+          "package_name": "ru.fbtw.code_mittings_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "948726641069-gh9bku4i05fhbatkdjnrdada03gvevit.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8e3wDPnCRsvwU1SPeVNshF-gseOSOP_s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "948726641069-gh9bku4i05fhbatkdjnrdada03gvevit.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
