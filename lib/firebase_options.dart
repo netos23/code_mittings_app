@@ -50,6 +50,7 @@ class DefaultFirebaseOptions {
     projectId: 'code-meetings',
     authDomain: 'code-meetings.firebaseapp.com',
     storageBucket: 'code-meetings.appspot.com',
+    measurementId: 'G-H6B4WER8LC',
   );
 
   static const FirebaseOptions android = FirebaseOptions(

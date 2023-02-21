@@ -29,6 +29,13 @@
             {
               "client_id": "948726641069-gh9bku4i05fhbatkdjnrdada03gvevit.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "948726641069-g8cp5pi0vg9ktc4bko0dllcf9ppabepi.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "ru.fbtw.codeMittingsApp"
+              }
             }
           ]
         }
