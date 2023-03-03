@@ -67,6 +67,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '948726641069',
     projectId: 'code-meetings',
     storageBucket: 'code-meetings.appspot.com',
+    androidClientId: '948726641069-v55741e97i7f1ibaorthqkojouiustku.apps.googleusercontent.com',
     iosClientId: '948726641069-g8cp5pi0vg9ktc4bko0dllcf9ppabepi.apps.googleusercontent.com',
     iosBundleId: 'ru.fbtw.codeMittingsApp',
   );
@@ -77,6 +78,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '948726641069',
     projectId: 'code-meetings',
     storageBucket: 'code-meetings.appspot.com',
+    androidClientId: '948726641069-v55741e97i7f1ibaorthqkojouiustku.apps.googleusercontent.com',
     iosClientId: '948726641069-g8cp5pi0vg9ktc4bko0dllcf9ppabepi.apps.googleusercontent.com',
     iosBundleId: 'ru.fbtw.codeMittingsApp',
   );

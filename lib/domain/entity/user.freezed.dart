@@ -16,6 +16,9 @@ final _privateConstructorUsedError = UnsupportedError(
 
 /// @nodoc
 mixin _$User {
+  String get id => throw _privateConstructorUsedError;
+  bool get verified => throw _privateConstructorUsedError;
+  String? get photo => throw _privateConstructorUsedError;
   String get username => throw _privateConstructorUsedError;
   String get name => throw _privateConstructorUsedError;
   String get surname => throw _privateConstructorUsedError;
@@ -32,7 +35,10 @@ abstract class $UserCopyWith<$Res> {
       _$UserCopyWithImpl<$Res, User>;
   @useResult
   $Res call(
-      {String username,
+      {String id,
+      bool verified,
+      String? photo,
+      String username,
       String name,
       String surname,
       DateTime birthday,
@@ -52,13 +58,28 @@ class _$UserCopyWithImpl<$Res, $Val extends User>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
+    Object? id = null,
+    Object? verified = null,
+    Object? photo = freezed,
     Object? username = null,
     Object? name = null,
     Object? surname = null,
     Object? birthday = null,
-    Object? sex = freezed,
+    Object? sex = null,
   }) {
     return _then(_value.copyWith(
+      id: null == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      verified: null == verified
+          ? _value.verified
+          : verified // ignore: cast_nullable_to_non_nullable
+              as bool,
+      photo: freezed == photo
+          ? _value.photo
+          : photo // ignore: cast_nullable_to_non_nullable
+              as String?,
       username: null == username
           ? _value.username
           : username // ignore: cast_nullable_to_non_nullable
@@ -75,7 +96,7 @@ class _$UserCopyWithImpl<$Res, $Val extends User>
           ? _value.birthday
           : birthday // ignore: cast_nullable_to_non_nullable
               as DateTime,
-      sex: freezed == sex
+      sex: null == sex
           ? _value.sex
           : sex // ignore: cast_nullable_to_non_nullable
               as Sex,
@@ -90,7 +111,10 @@ abstract class _$$_UserCopyWith<$Res> implements $UserCopyWith<$Res> {
   @override
   @useResult
   $Res call(
-      {String username,
+      {String id,
+      bool verified,
+      String? photo,
+      String username,
       String name,
       String surname,
       DateTime birthday,
@@ -106,13 +130,28 @@ class __$$_UserCopyWithImpl<$Res> extends _$UserCopyWithImpl<$Res, _$_User>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
+    Object? id = null,
+    Object? verified = null,
+    Object? photo = freezed,
     Object? username = null,
     Object? name = null,
     Object? surname = null,
     Object? birthday = null,
-    Object? sex = freezed,
+    Object? sex = null,
   }) {
     return _then(_$_User(
+      id: null == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      verified: null == verified
+          ? _value.verified
+          : verified // ignore: cast_nullable_to_non_nullable
+              as bool,
+      photo: freezed == photo
+          ? _value.photo
+          : photo // ignore: cast_nullable_to_non_nullable
+              as String?,
       username: null == username
           ? _value.username
           : username // ignore: cast_nullable_to_non_nullable
@@ -129,7 +168,7 @@ class __$$_UserCopyWithImpl<$Res> extends _$UserCopyWithImpl<$Res, _$_User>
           ? _value.birthday
           : birthday // ignore: cast_nullable_to_non_nullable
               as DateTime,
-      sex: freezed == sex
+      sex: null == sex
           ? _value.sex
           : sex // ignore: cast_nullable_to_non_nullable
               as Sex,
@@ -141,12 +180,21 @@ class __$$_UserCopyWithImpl<$Res> extends _$UserCopyWithImpl<$Res, _$_User>
 
 class _$_User implements _User {
   _$_User(
-      {required this.username,
+      {required this.id,
+      required this.verified,
+      this.photo,
+      required this.username,
       required this.name,
       required this.surname,
       required this.birthday,
       required this.sex});
 
+  @override
+  final String id;
+  @override
+  final bool verified;
+  @override
+  final String? photo;
   @override
   final String username;
   @override
@@ -160,7 +208,7 @@ class _$_User implements _User {
 
   @override
   String toString() {
-    return 'User(username: $username, name: $name, surname: $surname, birthday: $birthday, sex: $sex)';
+    return 'User(id: $id, verified: $verified, photo: $photo, username: $username, name: $name, surname: $surname, birthday: $birthday, sex: $sex)';
   }
 
   @override
@@ -168,18 +216,22 @@ class _$_User implements _User {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_User &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.verified, verified) ||
+                other.verified == verified) &&
+            (identical(other.photo, photo) || other.photo == photo) &&
             (identical(other.username, username) ||
                 other.username == username) &&
             (identical(other.name, name) || other.name == name) &&
             (identical(other.surname, surname) || other.surname == surname) &&
             (identical(other.birthday, birthday) ||
                 other.birthday == birthday) &&
-            const DeepCollectionEquality().equals(other.sex, sex));
+            (identical(other.sex, sex) || other.sex == sex));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, username, name, surname,
-      birthday, const DeepCollectionEquality().hash(sex));
+  int get hashCode => Object.hash(
+      runtimeType, id, verified, photo, username, name, surname, birthday, sex);
 
   @JsonKey(ignore: true)
   @override
@@ -190,12 +242,21 @@ class _$_User implements _User {
 
 abstract class _User implements User {
   factory _User(
-      {required final String username,
+      {required final String id,
+      required final bool verified,
+      final String? photo,
+      required final String username,
       required final String name,
       required final String surname,
       required final DateTime birthday,
       required final Sex sex}) = _$_User;
 
+  @override
+  String get id;
+  @override
+  bool get verified;
+  @override
+  String? get photo;
   @override
   String get username;
   @override

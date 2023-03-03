@@ -1,0 +1,26 @@
+{
+  "authNotify": "To continue using the application, you need to log in.",
+  "@authNotify": {
+    "type": "text"
+  },
+  "logInWithGitHub": "Log in with GitHub",
+  "@logInWithGitHub": {
+    "type": "text"
+  },
+  "welcomePage": "Welcome to Flame! This app will allow you to find friends, employees, soulmate, girlfriend or boyfriend!",
+  "@welcomePage": {
+    "type": "text"
+  },
+  "tutorialPage": "Swipe the cards to the right if you liked the person and to the left if not",
+  "@tutorialPage": {
+    "type": "text"
+  },
+  "getStartedPage": "Answer a few questions, for start",
+  "@getStartedPage": {
+    "type": "text"
+  },
+  "startUsing": "Start using app",
+  "@startUsing": {
+    "type": "text"
+  }
+}

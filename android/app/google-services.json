@@ -14,6 +14,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "948726641069-v55741e97i7f1ibaorthqkojouiustku.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ru.fbtw.code_mittings_app",
+            "certificate_hash": "a9b5530922de607c5beef072b5bce6a698a57c74"
+          }
+        },
+        {
           "client_id": "948726641069-gh9bku4i05fhbatkdjnrdada03gvevit.apps.googleusercontent.com",
           "client_type": 3
         }
